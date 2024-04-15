@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Datasensors</title>
+
+  <!-- Montserrat Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/@ionic/icons@4.5.10-0.b962a89/dist/css/ionicons.min.css" />
+  <script src="https://kit.fontawesome.com/7dded82dc6.js" crossorigin="anonymous"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="datasensord.css">
+</head>
+<body>
+
+  <div class="grid-container">
+    <aside id="sidebar">
+      <div class="sidebar-title">
+        <div class="sidebar-brand">
+          <span class="material-icons-outlined">menu</span> Menu
+        </div>
+      </div>
+      
+      <ul class="sidebar-list">
+        <li class="sidebar-list-item">
+          <a href="profile.html">
+            <span class="material-icons-outlined"></span> Profile
+          </a>
+        </li>
+        <li class="sidebar-list-item">
+          <a href="index.html">
+            <span class="material-icons-outlined"></span> Dashboard
+          </a>
+        </li>
+        <li class="sidebar-list-item">
+          <a href="datasensors.html">
+            <span class="material-icons-outlined"></span> Datasensors
+          </a>
+        </li>
+        <li class="sidebar-list-item">
+          <a href="actionhistory.html">
+            <span class="material-icons-outlined"></span> Action History
+          </a>
+        </li>
+      </ul>
+    </aside>
+        <main class="main-container"> 
+          <div class="main-title">
+            <h2>DATASENSORS</h2>
+          </div>
+
+          <div class="search-ba">
+              <input type="text" placeholder="Search..">
+              <button type="submit">Tìm kiếm</button>
+          </div>
+
+          <div>
+              <table id="table">
+                  <tr>
+                    <th onclick="sortTable(0)">
+                      ID 
+                      <div class="sort-icon">
+                      <div class="square"></div>
+                      <div class="triangle"></div>
+                    </div></th>
+                    <th onclick="sortTable(1)">
+                      Temperature 
+                      <div class="sort-icon">
+                      <div class="square"></div>
+                      <div class="triangle"></div>
+                    </div></th>
+                    <th onclick="sortTable(2)">
+                      Humidity 
+                      <div class="sort-icon">
+                      <div class="square"></div>
+                      <div class="triangle"></div>
+                    </div></th>
+                    <th onclick="sortTable(3)">
+                      Light 
+                      <div class="sort-icon">
+                      <div class="square"></div>
+                      <div class="triangle"></div>
+                    </div></th>
+                    <th onclick="sortTable(4)">
+                      Time 
+                      <div class="sort-icon">
+                      <div class="square"></div>
+                      <div class="triangle"></div>
+                    </div></th>
+                    <th onclick="sortTable(5)">
+                      Date
+                      <div class="sort-icon">
+                      <div class="square"></div>
+                      <div class="triangle"></div>
+                    </div></th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>24</td>
+                    <td>50</td>
+                    <td>97</td>
+                    <td>20</td>
+                    <td>15</td>
+                  </tr>
+                  <tr>
+                      <td>2</td>
+                      <td>23</td>
+                      <td>60</td>
+                      <td>90</td>
+                      <td>16</td>
+                      <td>20</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>12</td>
+                      <td>65</td>
+                      <td>83</td>
+                      <td>17</td>
+                      <td>20</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>11</td>
+                      <td>50</td>
+                      <td>70</td>
+                      <td>18</td>
+                      <td>20</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>10</td>
+                      <td>40</td>
+                      <td>66</td>
+                      <td>19</td>
+                      <td>20</td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>10</td>
+                      <td>40</td>
+                      <td>50</td>
+                      <td>20</td>
+                      <td>20</td>
+                    </tr>
+                </table>
+          </div>
+        </main>
+          <script src="Datasensors.js"></script>
+</body>
+</html>
